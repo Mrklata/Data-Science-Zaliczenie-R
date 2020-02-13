@@ -170,7 +170,7 @@ average_for_product_bar = function(x){
 #ANALYZING SD FOR WOJ
 
 Bul_data = c(AV_Bułka_Pszenna, Sd_Bułka_Pszenna) 
-Mięs_data = c(AV_Mięso_Wieprzowe_Bez_Kości, Sd_Mięso_Wieprzowe_Bez_Kości)
+Mies_data = c(AV_Mięso_Wieprzowe_Bez_Kości, Sd_Mięso_Wieprzowe_Bez_Kości)
 Kiel_data = c(AV_Kiełbasa_Wędzona, Sd_Kiełbasa_Wędzona)
 Fil_data = c(AV_Filety_Z_Morszczuka_Mrożone, Sd_Filety_Z_Morszczuka_Mrożone)
 Karp_data = c(AV_Karp_Świeży, Sd_Karp_Świeży)
