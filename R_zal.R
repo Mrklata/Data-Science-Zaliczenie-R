@@ -33,9 +33,9 @@ mies = rep(c("sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis",
 
 #CREATING VECTORS OF PRICES
 
-Bułka_Pszenna = c()
+Bulka_Pszenna = c()
 Mięso_Wieprzowe_Bez_Kości = c()
-Kiełbasa_Wędzona= c()
+Kielbasa_Wędzona= c()
 Filety_Z_Morszczuka_Mrożone = c()
 Karp_Świeży = c()
 Podkoszulek_Męski_Bawełniany_Bez_Rękawa = c()
@@ -46,13 +46,13 @@ Olej_Napędowy = c()
 
 for (n in c(0, 140, 140*11)) {
   for (i in 3:16) {
-    Bułka_Pszenna = c(Bułka_Pszenna, tabela[,i+n])
+    Bulka_Pszenna = c(Bulka_Pszenna, tabela[,i+n])
   }
   for (i in 17:30) {
     Mięso_Wieprzowe_Bez_Kości = c(Mięso_Wieprzowe_Bez_Kości, tabela[,i+n])
   }
   for (i in 31:44) {
-    Kiełbasa_Wędzona = c(Kiełbasa_Wędzona, tabela[,i+n])
+    Kielbasa_Wędzona = c(Kielbasa_Wędzona, tabela[,i+n])
   }
   for (i in 45:58) {
     Filety_Z_Morszczuka_Mrożone = c(Filety_Z_Morszczuka_Mrożone, tabela[,i+n])
@@ -79,8 +79,8 @@ for (n in c(0, 140, 140*11)) {
 
 #CREATING DATA FRAME
 
-data = data.frame(woj = woj_rep, rok = rok_rep, mies = mies, Bułka_Pszenna = Bułka_Pszenna, Mięso_Wieprzowe_Bez_Kości = Mięso_Wieprzowe_Bez_Kości,
-                 Kiełbasa_Wędzona = Kiełbasa_Wędzona, Filety_Z_Morszczuka_Mrożone = Filety_Z_Morszczuka_Mrożone, Karp_Świeży = Karp_Świeży,
+data = data.frame(woj = woj_rep, rok = rok_rep, mies = mies, Bulka_Pszenna = Bulka_Pszenna, Mięso_Wieprzowe_Bez_Kości = Mięso_Wieprzowe_Bez_Kości,
+                 Kielbasa_Wędzona = Kielbasa_Wędzona, Filety_Z_Morszczuka_Mrożone = Filety_Z_Morszczuka_Mrożone, Karp_Świeży = Karp_Świeży,
                  Podkoszulek_Męski_Bawełniany_Bez_Rękawa = Podkoszulek_Męski_Bawełniany_Bez_Rękawa, Rajstopy_Damskie_Gładkie_15Den = Rajstopy_Damskie_Gładkie_15Den,
                  Spodnie_Jeans = Spodnie_Jeans, Czyszczenie_Chemiczne_Garnituru_Męskiego = Czyszczenie_Chemiczne_Garnituru_Męskiego, Olej_Napędowy = Olej_Napędowy)
 
@@ -169,9 +169,9 @@ average_for_product_bar = function(x){
 
 #ANALYZING SD FOR WOJ
 
-Buł_data = c(AV_Bułka_Pszenna, Sd_Bułka_Pszenna) 
+Bul_data = c(AV_Bułka_Pszenna, Sd_Bułka_Pszenna) 
 Mięs_data = c(AV_Mięso_Wieprzowe_Bez_Kości, Sd_Mięso_Wieprzowe_Bez_Kości)
-Kieł_data = c(AV_Kiełbasa_Wędzona, Sd_Kiełbasa_Wędzona)
+Kiel_data = c(AV_Kiełbasa_Wędzona, Sd_Kiełbasa_Wędzona)
 Fil_data = c(AV_Filety_Z_Morszczuka_Mrożone, Sd_Filety_Z_Morszczuka_Mrożone)
 Karp_data = c(AV_Karp_Świeży, Sd_Karp_Świeży)
 Podk_data = c(AV_Podkoszulek_Męski_Bawełniany_Bez_Rękawa, Sd_Podkoszulek_Męski_Bawełniany_Bez_Rękawa)
